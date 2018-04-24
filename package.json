@@ -1,0 +1,46 @@
+{
+  "name": "x_team_build_tool_round_up",
+  "version": "1.0.0",
+  "description": "X-Team Build Tool Round Up",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "node hotserver.js",
+    "all": "npm run build & npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thoughtscript/x_team_build_tool_round_up.git"
+  },
+  "engines": {
+    "node": "=8.8.0"
+  },
+  "keywords": [
+    "Webpack 4",
+    "Parcel",
+    "Rollup"
+  ],
+  "author": "Adam I. Gerard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Thoughtscript/x_team_build_tool_round_up/issues"
+  },
+  "homepage": "https://github.com/Thoughtscript/x_team_build_tool_round_up#readme",
+  "devDependencies": {
+
+    "babel-preset-env": "=1.6.1",
+    "live-server": "=1.2.0",
+    "parcel-bundler": "=1.7.1",
+    "rollup": "=0.58.2",
+    "webpack": "=4.6.0"
+
+  },
+  "dependencies": {
+
+    "react": "=16.2.0",
+    "react-dom": "=16.2.0",
+    "react-redux": "=5.0.7",
+    "react-router-dom": "=4.2.2",
+    "redux": "=3.7.2"
+
+  }
+}
