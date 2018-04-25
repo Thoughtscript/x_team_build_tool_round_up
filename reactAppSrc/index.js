@@ -1,7 +1,7 @@
 'use strict'
 
 /**
- *  Entry.
+ *  Parcel Entry.
  */
 
 import React from 'react'

@@ -1,69 +1,31 @@
 'use strict'
 
-const path = require('path')
+const path = require('path'),
+  webpack = require('webpack')
 
 module.exports = {
   mode: 'production',
-  entry: './app/entry',
+  entry: './reactAppSrc/index.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
-    publicPath: '/assets/',
-    library: 'MyLibrary',
-    libraryTarget: 'umd',
+    path: path.resolve(__dirname, 'public/built/'),
+    filename: '[name].min.js',
   },
-
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  },
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
-        include: [
-          path.resolve(__dirname, 'app')
-        ],
-        exclude: [
-          path.resolve(__dirname, 'app/demo-files')
-        ],
-        issuer: {test, include, exclude},
-        loader: 'babel-loader',
-        options: {
-          presets: ['es2015']
-        }
+        test: /\.jsx$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader'
       },
-
       {
-        test: /\.html$/,
-        use: [
-          'htmllint-loader',
-          {
-            loader: 'html-loader',
-            options: {}
-          }
-        ]
-      },
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader'
+      }
     ]
-
-  },
-
-  resolve: {
-    modules: [
-      'node_modules',
-      path.resolve(__dirname, 'app')
-    ],
-    extensions: ['.js', '.json', '.jsx', '.css'],
-  },
-  devtool: 'source-map',
-  context: __dirname,
-  externals: ['react'],
-  devServer: {
-    proxy: { //
-      '/api': 'http://localhost:3000'
-    },
-    contentBase: path.join(__dirname, 'public'),
-    compress: true,
-    historyApiFallback: true, //
-    hot: true,
-    https: false,
-    noInfo: true
   },
   plugins: []
 }

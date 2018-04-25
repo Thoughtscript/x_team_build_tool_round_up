@@ -24,4 +24,10 @@ Each build tool's configuration is seperated into independent directories!
 
 We'll be comparing *build time* for `production` and `development`, support for `.scss`, and *bundle size*.
 
+```bash
+    $ npm run build-parcel
+    $ npm run build-webpack
+    $ npm run build-rollup
+```
+
 # Results 
