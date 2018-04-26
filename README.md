@@ -18,7 +18,8 @@ Shared `babel` dependencies:
     "babel-loader": "=7.1.4",
     "babel-plugin-external-helpers": "=6.22.0",
     "babel-preset-env": "=1.6.1",
-    "babel-preset-react": "=6.24.1"
+    "babel-preset-react": "=6.24.1",
+    "babel-preset-stage-0": "=6.24.1"
 ```
 
 `parcel` dependencies:
@@ -28,10 +29,9 @@ Shared `babel` dependencies:
 
 `rollup` dependencies:
 ```json
-     "rollup": "=0.58.2",
-     "rollup-plugin-babel": "=3.0.4",
-     "rollup-plugin-commonjs": "=9.1.0",
-     "rollup-plugin-node-resolve": "=3.3.0"
+    "rollup": "=0.58.2",
+    "rollup-plugin-babel": "=3.0.4",
+    "rollup-plugin-uglify": "=3.0.0"
 ```
 
 `webpack` dependencies:
@@ -142,6 +142,6 @@ Results divided into `production` and `development` modes:
 
 https://parceljs.org/
 
-https://github.com/yamafaktory/babel-react-rollup-starter
-
 https://webpack.js.org/
+
+https://code.lengstorf.com/learn-rollup-js/
