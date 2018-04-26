@@ -4,10 +4,10 @@ const path = require('path'),
   webpack = require('webpack')
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
   entry: './reactAppSrc/index.js',
   output: {
-    path: path.resolve(__dirname, 'public/built/'),
+    path: path.resolve(__dirname, '../public/built/'),
     filename: '[name].min.js',
   },
   resolve: {
