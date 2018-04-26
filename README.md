@@ -138,6 +138,7 @@ Results divided into `production` and `development` modes:
         </tr>
     </tbody>
 </table>
+
 # Shout Outs and Great Resources
 
 https://parceljs.org/
