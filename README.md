@@ -44,7 +44,7 @@ Each build tool's configuration is seperated into independent directories!
 
 # Battle of the Builds
 
-We'll be comparing *build time* for `production` and `development`, support for `.scss`, and *bundle size*.
+We'll be comparing *build time* for `development` and `production` and additional features:
 
 ```bash
     $ npm run build-parcel
