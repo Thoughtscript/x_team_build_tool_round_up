@@ -139,6 +139,23 @@ Results divided into `production` and `development` modes:
     </tbody>
 </table>
 
+### Other Considerations
+
+Above, we compare raw build time alone but there are several other highly relevant considerations:
+
+1. `Parcel`'s caching feature sees dramatically decreases in time consumption after the initial run. For frequent, small changes, in smaller projects `Parcel` is a great choice.
+2. `Rollup` provides much simpler configuration over `webpack 4` and has a host of pre-configured plugins that are a breeze to incorporate into your project. `Rollup`'s also the fastest of the build tools **period**. 
+3. `Rollup` also provides convient *source maps* which can aid in debugging.
+4. `webpack 4` has gotten a lot easier to use and particularly through the convenient `mode` attribute (which will enforce *minification* when set to 'production' automatically now).
+
+### Takeaway
+
+Overall, `Parcel`'s a fantastic choice for small projects since it's requires *zero* configuration. 
+
+`Rollup` represents the next generation of build tools and is lightning fast with easy configuration. 
+
+`webpack 4` represents a great improvement in the tradition of a tried and true universal build-tool workhorse. It's also largely interchangeable with `webpack 3` configuration which simplifies migration.
+
 # Shout Outs and Great Resources
 
 https://parceljs.org/
